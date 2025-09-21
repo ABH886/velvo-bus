@@ -1,0 +1,261 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 230px;
+    background-color: #cfd0df;
+    height: 60px;
+}
+.nav ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+    list-style: none;
+}
+.nav ul li{
+    list-style: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+.nav ul li:hover{
+    border-bottom: 3px solid black;
+}
+.nav .btn{
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    box-shadow: 15px;
+    border-radius: 20px;
+    border: none;
+
+}
+.nav img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+.dark .card{
+    background-color: blue;
+}
+.ht{
+
+background-color: antiquewhite;
+color: black;
+}
+/* ...existing code... */
+.img {
+    position: relative;
+    width: 700px; /* apne hisab se adjust karein */
+    margin: 20px auto;
+    border-radius: 40px;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50px;
+}
+
+.img h1,
+.img p,
+.img button {
+    position: absolute;
+    left: 20px;
+    top: 50px;
+
+    color: #fff;
+    z-index: 2;
+    /* background: rgba(0,0,0,0.5);  // optional, readability ke liye */
+    margin-top: 90px;
+}
+
+.img h1 {
+    top: 40px;
+    font-size: 2rem;
+}
+
+.img p {
+    top: 90px;
+    font-size: 1rem;
+}
+
+.img button {
+    top: 130px;
+    padding: 8px 16px;
+    background: #005baa;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* ...existing code... */
+
+ .head.btn:hover{
+    transform: scale(1.1);
+
+}
+section{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+}
+.head {
+    text-align: left;
+    padding-right: 40px; /* optional, thoda gap ke liye */
+}
+
+.head .btn {
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-right: 0;
+    float: left; /* button ko right side par lane ke liye */
+    background-color: rgb(94, 94, 240);
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 60%;
+    
+    gap: 30px;
+    color: black;
+}
+.cards .card{
+    background-color: aliceblue;
+    margin-top: 20px;
+    width: 80%;
+}
+
+section .head .card:hover{
+    transform: scale(1.1);
+}
+main{
+    margin-top: 40px;
+}
+footer {
+    background: #0407c9;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0 10px 0;
+    margin-top: 40px;
+}
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.footer-content ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+.footer-content ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: text-decoration 0.2s;
+}
+.footer-content ul li a:hover {
+    text-decoration: underline;
+}
+/* ...existing code... */
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+        padding: 10px 0;
+    }
+    .nav ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    .nav .btn, .nav img {
+        margin-top: 10px;
+    }
+    section {
+        flex-direction: column;
+        margin: 10px;
+        align-items: center;
+    }
+    .head {
+        text-align: center;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .head .btn {
+        float: none;
+        display: block;
+        margin: 10px auto;
+        width: 90%;
+    }
+    .cards {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+    .cards .card {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .img {
+        width: 95vw;
+        border-radius: 20px;
+    }
+    .img img {
+        border-radius: 20px;
+    }
+    .img h1, .img p, .img button {
+        left: 10px;
+        top: 20px;
+        margin-top: 40px;
+        font-size: 1rem;
+    }
+    .img h1 {
+        top: 30px;
+        font-size: 1.2rem;
+    }
+    .img p {
+        top: 60px;
+        font-size: 0.9rem;
+    }
+    .img button {
+        top: 90px;
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+    footer {
+        padding: 20px 0 5px 0;
+    }
+    .footer-content ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/* ...existing code... */
+
+
